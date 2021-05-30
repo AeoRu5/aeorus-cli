@@ -1,0 +1,16 @@
+{
+  "name": "<%= name %>",
+  "private": <%= private %>,
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "license": <% if (license) { %>"MIT"<% } else { %>""<% } %>,
+  "author": <% if (author) { %><%= author %><% } else { %>""<% } %>,
+  "main": "lib/<%= main %>",
+  "bin": "bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+<%= respository %>"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
